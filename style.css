@@ -1,0 +1,131 @@
+.sidebar {border: solid black 3px;
+    border-top: 0px;
+/* background-image: url("Header\ Background.png"); */
+background-color: rgb(255, 214, 120);
+background-position: center;
+background-repeat: no-repeat;
+text-align: center;
+background-size: 400%;
+position: fixed;
+right: 0;
+margin: auto;
+width: 33%;
+height: 100%;
+padding: 20px;
+ z-index: 1;
+}
+
+.sidebar h1 {color:black;
+    vertical-align: text-top;
+    text-align: center;
+    font-family: 'Space Mono', serif;
+    font-size: 30px;}
+
+ .sidebar h2 {
+    font-family: "Righteous";
+    font-size: 25px;
+    color: black;
+    left: 0px;
+    text-align: center;
+    position: relative;
+
+}
+
+ .btn {border: solid black;
+   
+    border-radius: 15px;
+    height: 20%;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    cursor: pointer;
+  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0px 0px;
+    margin: 0px;
+}
+
+.back {
+    width: 20%;
+    padding: 25px;
+    height: 2%;
+    font-family: "Righteous", serif;
+    color: red;
+    text-align: center !important;
+    margin: 0px;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 15px;
+    transition: all .2s;
+    position: relative;
+    background-image: var(--background-image);
+    
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn-white {
+    background-image: var(--background-image);
+    background-color: rgba(62, 19, 170, 0.1);
+}
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+    
+}
+
+.btn-white::after {
+    background-image: var(--background-image);;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.08) scaleY(1.35);
+    opacity: 0;
+    
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 1;
+        transform: translateY(30px);
+        
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+ 
+.jobs {
+
+    --background-image: url('Freebie-GradientTextures-Preview-02.webp');
+   color: white !important;
+}
